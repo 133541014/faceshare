@@ -1,0 +1,36 @@
+.clear{clear:both;}
+.title{
+	font-size:25px;
+	float:left;
+	margin-left:11%;
+	padding-top:8px;
+}
+.menu{float:right;}
+.menu ul li{
+	float:right;
+	list-style-type:none;
+	width:20px;
+	width:100px;
+
+}
+.menu ul{margin-right:50px;}
+a{text-decoration:none;}
+.menu a:hover{border-bottom:3px red solid;}
+.blog-description h2{margin-left:43%;}
+.blog-description p{margin-left:21%;margin-top:5%;}
+.blog-description h2{margin-top:10%;}
+.blog-content{margin-top:5%;}
+.blog-content label{margin-left:26%;font-size:23px;}
+.blog-content input{height:45px;font-size:18px;font-weight:300;margin-left:20px;width:400px;}
+.blog-description{margin-top:5%;}
+.blog-content textarea{
+	font-size:18px;
+	font-weight:300;
+	margin-left:20px;
+	width:500px;overflow-y:auto;
+	height:400px;
+	vertical-align:top;
+}
+.blog-footer input{width:170px;margin-left:30%;}
+.blog-footer{margin-top:5%;}
+.blog-photo{margin-top:5%;}

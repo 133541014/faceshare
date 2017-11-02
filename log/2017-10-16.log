@@ -1,0 +1,83 @@
+2017-10-16 13:48:22 [INFO] - Starting Application on WangYiChao with PID 6248 (E:\workspace\FaceShare\target\classes started by 11 in E:\workspace\FaceShare)
+2017-10-16 13:48:22 [INFO] - No active profile set, falling back to default profiles: default
+2017-10-16 13:48:23 [INFO] - HV000001: Hibernate Validator 5.3.5.Final
+2017-10-16 13:48:23 [INFO] - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4196c360: startup date [Mon Oct 16 13:48:23 CST 2017]; root of context hierarchy
+2017-10-16 13:48:24 [INFO] - Multiple Spring Data modules found, entering strict repository configuration mode!
+2017-10-16 13:48:24 [INFO] - Multiple Spring Data modules found, entering strict repository configuration mode!
+2017-10-16 13:48:24 [INFO] - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.origen.faceshare.repository.MoodCommentReplyRepository.
+2017-10-16 13:48:24 [INFO] - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.origen.faceshare.repository.MoodCommentRepository.
+2017-10-16 13:48:24 [INFO] - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.origen.faceshare.repository.UserRepository.
+2017-10-16 13:48:24 [INFO] - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.origen.faceshare.repository.DiaryRepository.
+2017-10-16 13:48:24 [INFO] - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.origen.faceshare.repository.MoodRepository.
+2017-10-16 13:48:24 [INFO] - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.origen.faceshare.repository.UserMessageRepository.
+2017-10-16 13:48:25 [INFO] - Tomcat initialized with port(s): 8820 (http)
+2017-10-16 13:48:25 [INFO] - Starting service [Tomcat]
+2017-10-16 13:48:25 [INFO] - Starting Servlet Engine: Apache Tomcat/8.5.15
+2017-10-16 13:48:26 [INFO] - Initializing Spring embedded WebApplicationContext
+2017-10-16 13:48:26 [INFO] - Root WebApplicationContext: initialization completed in 2495 ms
+2017-10-16 13:48:26 [INFO] - Mapping servlet: 'dispatcherServlet' to [/]
+2017-10-16 13:48:26 [INFO] - Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-10-16 13:48:26 [INFO] - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-10-16 13:48:26 [INFO] - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-10-16 13:48:26 [INFO] - Mapping filter: 'requestContextFilter' to: [/*]
+2017-10-16 13:48:26 [INFO] - Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-10-16 13:48:26 [INFO] - HHH000412: Hibernate Core {5.0.12.Final}
+2017-10-16 13:48:26 [INFO] - HHH000206: hibernate.properties not found
+2017-10-16 13:48:26 [INFO] - HHH000021: Bytecode provider name : javassist
+2017-10-16 13:48:26 [INFO] - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-10-16 13:48:27 [INFO] - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-10-16 13:48:27 [INFO] - HHH000228: Running hbm2ddl schema update
+2017-10-16 13:48:28 [INFO] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-10-16 13:48:28 [INFO] - HHH000397: Using ASTQueryTranslatorFactory
+2017-10-16 13:48:29 [INFO] - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4196c360: startup date [Mon Oct 16 13:48:23 CST 2017]; root of context hierarchy
+2017-10-16 13:48:29 [INFO] - Mapped "{[/diaryDetail]}" onto public org.springframework.web.servlet.ModelAndView com.origen.faceshare.controller.DiaryController.diaryDetail(java.lang.Integer)
+2017-10-16 13:48:29 [INFO] - Mapped "{[/sendDiary]}" onto public org.springframework.web.servlet.ModelAndView com.origen.faceshare.controller.DiaryController.sendDiary(com.origen.faceshare.model.entity.Diary,javax.servlet.http.HttpSession)
+2017-10-16 13:48:29 [INFO] - Mapped "{[/updateDiary]}" onto public org.springframework.web.servlet.ModelAndView com.origen.faceshare.controller.DiaryController.updateDiary(com.origen.faceshare.model.entity.Diary)
+2017-10-16 13:48:29 [INFO] - Mapped "{[/deleteDiary]}" onto public org.springframework.web.servlet.ModelAndView com.origen.faceshare.controller.DiaryController.deleteDiary(java.lang.Integer)
+2017-10-16 13:48:29 [INFO] - Mapped "{[/moodShare]}" onto public org.springframework.web.servlet.ModelAndView com.origen.faceshare.controller.MoodsController.moodShare(javax.servlet.http.HttpSession,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,org.springframework.web.multipart.MultipartFile[],java.lang.String)
+2017-10-16 13:48:29 [INFO] - Mapped "{[/deleteMood]}" onto public org.springframework.web.servlet.ModelAndView com.origen.faceshare.controller.MoodsController.deleteMood(java.lang.Integer)
+2017-10-16 13:48:29 [INFO] - Mapped "{[/commentMood]}" onto public org.springframework.web.servlet.ModelAndView com.origen.faceshare.controller.MoodsController.commentMood(java.lang.Integer,java.lang.String,javax.servlet.http.HttpSession)
+2017-10-16 13:48:29 [INFO] - Mapped "{[/replyComment]}" onto public org.springframework.web.servlet.ModelAndView com.origen.faceshare.controller.MoodsController.replyComment(java.lang.Integer,java.lang.Integer,java.lang.String,javax.servlet.http.HttpSession,java.lang.String)
+2017-10-16 13:48:29 [INFO] - Mapped "{[/toIndex]}" onto public org.springframework.web.servlet.ModelAndView com.origen.faceshare.controller.NavigateController.toIndex(javax.servlet.http.HttpServletRequest)
+2017-10-16 13:48:29 [INFO] - Mapped "{[/]}" onto public org.springframework.web.servlet.ModelAndView com.origen.faceshare.controller.NavigateController.toLogin(javax.servlet.http.HttpServletRequest)
+2017-10-16 13:48:29 [INFO] - Mapped "{[/toFriendDynamic]}" onto public org.springframework.web.servlet.ModelAndView com.origen.faceshare.controller.NavigateController.toFriendDynamic(javax.servlet.http.HttpSession,java.lang.Integer)
+2017-10-16 13:48:29 [INFO] - Mapped "{[/toMyDynamic]}" onto public org.springframework.web.servlet.ModelAndView com.origen.faceshare.controller.NavigateController.toMyDynamic(javax.servlet.http.HttpSession,java.lang.Integer)
+2017-10-16 13:48:29 [INFO] - Mapped "{[/toFaceShare]}" onto public org.springframework.web.servlet.ModelAndView com.origen.faceshare.controller.NavigateController.toFaceShare()
+2017-10-16 13:48:29 [INFO] - Mapped "{[/toMyFriends]}" onto public org.springframework.web.servlet.ModelAndView com.origen.faceshare.controller.NavigateController.toMyFriends(javax.servlet.http.HttpSession,java.lang.Integer)
+2017-10-16 13:48:29 [INFO] - Mapped "{[/toAddFriend]}" onto public org.springframework.web.servlet.ModelAndView com.origen.faceshare.controller.NavigateController.toAddFriend()
+2017-10-16 13:48:29 [INFO] - Mapped "{[/toAddUserInfo]}" onto public org.springframework.web.servlet.ModelAndView com.origen.faceshare.controller.NavigateController.toAddUserInfo(javax.servlet.http.HttpSession)
+2017-10-16 13:48:29 [INFO] - Mapped "{[/toUserMessage]}" onto public org.springframework.web.servlet.ModelAndView com.origen.faceshare.controller.NavigateController.toUserMessage(java.lang.Integer,javax.servlet.http.HttpSession)
+2017-10-16 13:48:29 [INFO] - Mapped "{[/toMyDiary]}" onto public org.springframework.web.servlet.ModelAndView com.origen.faceshare.controller.NavigateController.toMyDiary(javax.servlet.http.HttpSession,java.lang.Integer)
+2017-10-16 13:48:29 [INFO] - Mapped "{[/toDiary]}" onto public org.springframework.web.servlet.ModelAndView com.origen.faceshare.controller.NavigateController.toBlog()
+2017-10-16 13:48:29 [INFO] - Mapped "{[/addUserInfo]}" onto public org.springframework.web.servlet.ModelAndView com.origen.faceshare.controller.UserController.addUserInfo(javax.servlet.http.HttpSession,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,org.springframework.web.multipart.MultipartFile,java.lang.String,java.lang.String)
+2017-10-16 13:48:29 [INFO] - Mapped "{[/register]}" onto public void com.origen.faceshare.controller.UserController.userRegister(com.origen.faceshare.model.entity.User,javax.servlet.http.HttpServletResponse,javax.servlet.http.HttpSession)
+2017-10-16 13:48:29 [INFO] - Mapped "{[/loginout]}" onto public org.springframework.web.servlet.ModelAndView com.origen.faceshare.controller.UserController.loginout(javax.servlet.http.HttpSession)
+2017-10-16 13:48:29 [INFO] - Mapped "{[/searchUser]}" onto public void com.origen.faceshare.controller.UserController.searchUser(java.lang.String,java.lang.String,java.lang.String,javax.servlet.http.HttpServletResponse,javax.servlet.http.HttpSession)
+2017-10-16 13:48:29 [INFO] - Mapped "{[/login]}" onto public void com.origen.faceshare.controller.UserController.userLogin(com.origen.faceshare.model.entity.User,javax.servlet.http.HttpServletResponse,javax.servlet.http.HttpSession,java.lang.String)
+2017-10-16 13:48:29 [INFO] - Mapped "{[/userSendMessage]}" onto public void com.origen.faceshare.controller.UserController.userSendMessage(java.lang.Integer,java.lang.String,javax.servlet.http.HttpSession,javax.servlet.http.HttpServletResponse)
+2017-10-16 13:48:29 [INFO] - Mapped "{[/addFriend]}" onto public void com.origen.faceshare.controller.UserController.addFriend(javax.servlet.http.HttpSession,java.lang.String,javax.servlet.http.HttpServletResponse)
+2017-10-16 13:48:29 [INFO] - Mapped "{[/userMessageDeal]}" onto public void com.origen.faceshare.controller.UserController.userMessageDeal(java.lang.Integer,java.lang.Integer,java.lang.String,javax.servlet.http.HttpSession,java.lang.Integer,javax.servlet.http.HttpServletResponse)
+2017-10-16 13:48:29 [INFO] - Mapped "{[/deleteFriend]}" onto public org.springframework.web.servlet.ModelAndView com.origen.faceshare.controller.UserController.deleteFriend(java.lang.Integer,javax.servlet.http.HttpSession)
+2017-10-16 13:48:29 [INFO] - Mapped "{[/showUserInfo]}" onto public void com.origen.faceshare.controller.UserController.showUserInfo(java.lang.Integer,javax.servlet.http.HttpServletResponse)
+2017-10-16 13:48:29 [INFO] - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-10-16 13:48:29 [INFO] - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-10-16 13:48:29 [INFO] - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-10-16 13:48:29 [INFO] - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-10-16 13:48:29 [INFO] - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-10-16 13:48:30 [WARN] - spring-boot-starter-redis is deprecated as of Spring Boot 1.4, please migrate to spring-boot-starter-data-redis
+2017-10-16 13:48:30 [INFO] - Registering beans for JMX exposure on startup
+2017-10-16 13:48:30 [INFO] - Initializing ProtocolHandler ["http-nio-8820"]
+2017-10-16 13:48:30 [INFO] - Starting ProtocolHandler ["http-nio-8820"]
+2017-10-16 13:48:30 [INFO] - Using a shared selector for servlet write/read
+2017-10-16 13:48:30 [INFO] - Tomcat started on port(s): 8820 (http)
+2017-10-16 13:48:30 [INFO] - Started Application in 8.147 seconds (JVM running for 8.715)
+2017-10-16 13:49:06 [INFO] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-10-16 13:49:06 [INFO] - FrameworkServlet 'dispatcherServlet': initialization started
+2017-10-16 13:49:06 [INFO] - FrameworkServlet 'dispatcherServlet': initialization completed in 21 ms
+2017-10-16 13:49:06 [INFO] - [THYMELEAF] INITIALIZING TEMPLATE ENGINE
+2017-10-16 13:49:06 [INFO] - [THYMELEAF] INITIALIZING TEMPLATE RESOLVER: org.thymeleaf.spring4.templateresolver.SpringResourceTemplateResolver
+2017-10-16 13:49:06 [INFO] - [THYMELEAF] TEMPLATE RESOLVER INITIALIZED OK
+2017-10-16 13:49:06 [INFO] - [THYMELEAF] INITIALIZING MESSAGE RESOLVER: org.thymeleaf.spring4.messageresolver.SpringMessageResolver
+2017-10-16 13:49:06 [INFO] - [THYMELEAF] MESSAGE RESOLVER INITIALIZED OK
+2017-10-16 13:49:06 [INFO] - [THYMELEAF] TEMPLATE ENGINE INITIALIZED
+2017-10-16 13:49:13 [INFO] - origen 的收到信息条数已更新

@@ -1,0 +1,984 @@
+2017-09-01 14:25:07 [INFO] - Starting Application on WangYiChao with PID 7716 (E:\workspace\FaceShare\target\classes started by 11 in E:\workspace\FaceShare)
+2017-09-01 14:25:07 [INFO] - No active profile set, falling back to default profiles: default
+2017-09-01 14:25:07 [INFO] - HV000001: Hibernate Validator 5.3.5.Final
+2017-09-01 14:25:07 [INFO] - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4196c360: startup date [Fri Sep 01 14:25:07 CST 2017]; root of context hierarchy
+2017-09-01 14:25:08 [INFO] - Multiple Spring Data modules found, entering strict repository configuration mode!
+2017-09-01 14:25:08 [INFO] - Multiple Spring Data modules found, entering strict repository configuration mode!
+2017-09-01 14:25:08 [INFO] - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.origen.faceshare.repository.MoodCommentReplyRepository.
+2017-09-01 14:25:08 [INFO] - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.origen.faceshare.repository.MoodCommentRepository.
+2017-09-01 14:25:08 [INFO] - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.origen.faceshare.repository.UserRepository.
+2017-09-01 14:25:08 [INFO] - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.origen.faceshare.repository.DiaryRepository.
+2017-09-01 14:25:08 [INFO] - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.origen.faceshare.repository.MoodRepository.
+2017-09-01 14:25:08 [INFO] - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.origen.faceshare.repository.UserMessageRepository.
+2017-09-01 14:25:09 [INFO] - Tomcat initialized with port(s): 8820 (http)
+2017-09-01 14:25:09 [INFO] - Starting service [Tomcat]
+2017-09-01 14:25:09 [INFO] - Starting Servlet Engine: Apache Tomcat/8.5.15
+2017-09-01 14:25:09 [INFO] - Initializing Spring embedded WebApplicationContext
+2017-09-01 14:25:09 [INFO] - Root WebApplicationContext: initialization completed in 1882 ms
+2017-09-01 14:25:09 [INFO] - Mapping servlet: 'dispatcherServlet' to [/]
+2017-09-01 14:25:09 [INFO] - Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-09-01 14:25:09 [INFO] - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-09-01 14:25:09 [INFO] - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-09-01 14:25:09 [INFO] - Mapping filter: 'requestContextFilter' to: [/*]
+2017-09-01 14:25:10 [INFO] - Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-09-01 14:25:10 [INFO] - HHH000412: Hibernate Core {5.0.12.Final}
+2017-09-01 14:25:10 [INFO] - HHH000206: hibernate.properties not found
+2017-09-01 14:25:10 [INFO] - HHH000021: Bytecode provider name : javassist
+2017-09-01 14:25:10 [INFO] - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-09-01 14:25:11 [ERROR] - Unable to create initial connections of pool.
+com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:989)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:341)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2192)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2225)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2024)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:779)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:389)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:330)
+	at org.apache.tomcat.jdbc.pool.PooledConnection.connectUsingDriver(PooledConnection.java:310)
+	at org.apache.tomcat.jdbc.pool.PooledConnection.connect(PooledConnection.java:203)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.createConnection(ConnectionPool.java:735)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.borrowConnection(ConnectionPool.java:667)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.init(ConnectionPool.java:482)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.<init>(ConnectionPool.java:154)
+	at org.apache.tomcat.jdbc.pool.DataSourceProxy.pCreatePool(DataSourceProxy.java:118)
+	at org.apache.tomcat.jdbc.pool.DataSourceProxy.createPool(DataSourceProxy.java:107)
+	at org.apache.tomcat.jdbc.pool.DataSourceProxy.getConnection(DataSourceProxy.java:131)
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:180)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:68)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:35)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:88)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:254)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:228)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:207)
+	at org.hibernate.engine.jdbc.internal.JdbcServicesImpl.configure(JdbcServicesImpl.java:51)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.configureService(StandardServiceRegistryImpl.java:94)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:237)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:207)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.handleTypes(MetadataBuildingProcess.java:352)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:111)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:847)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:874)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:60)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:353)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:370)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:359)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1687)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1624)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1078)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:857)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:543)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107)
+	at com.origen.faceshare.Application.main(Application.java:21)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:211)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:300)
+	... 59 common frames omitted
+2017-09-01 14:25:11 [WARN] - HHH000342: Could not obtain connection to query metadata : Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+2017-09-01 14:25:11 [INFO] - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-09-01 14:25:11 [INFO] - HHH000422: Disabling contextual LOB creation as connection was null
+2017-09-01 14:25:12 [INFO] - HHH000228: Running hbm2ddl schema update
+2017-09-01 14:25:13 [ERROR] - Unable to create initial connections of pool.
+com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:989)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:341)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2192)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2225)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2024)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:779)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:389)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:330)
+	at org.apache.tomcat.jdbc.pool.PooledConnection.connectUsingDriver(PooledConnection.java:310)
+	at org.apache.tomcat.jdbc.pool.PooledConnection.connect(PooledConnection.java:203)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.createConnection(ConnectionPool.java:735)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.borrowConnection(ConnectionPool.java:667)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.init(ConnectionPool.java:482)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.<init>(ConnectionPool.java:154)
+	at org.apache.tomcat.jdbc.pool.DataSourceProxy.pCreatePool(DataSourceProxy.java:118)
+	at org.apache.tomcat.jdbc.pool.DataSourceProxy.createPool(DataSourceProxy.java:107)
+	at org.apache.tomcat.jdbc.pool.DataSourceProxy.getConnection(DataSourceProxy.java:131)
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:180)
+	at org.hibernate.tool.schema.internal.TargetDatabaseImpl.prepare(TargetDatabaseImpl.java:38)
+	at org.hibernate.tool.schema.internal.SchemaMigratorImpl.doMigration(SchemaMigratorImpl.java:57)
+	at org.hibernate.tool.hbm2ddl.SchemaUpdate.execute(SchemaUpdate.java:134)
+	at org.hibernate.tool.hbm2ddl.SchemaUpdate.execute(SchemaUpdate.java:101)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:472)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:444)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:879)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:60)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:353)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:370)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:359)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1687)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1624)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1078)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:857)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:543)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107)
+	at com.origen.faceshare.Application.main(Application.java:21)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:211)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:300)
+	... 52 common frames omitted
+2017-09-01 14:25:13 [WARN] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaAutoConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory
+2017-09-01 14:25:13 [INFO] - Stopping service [Tomcat]
+2017-09-01 14:25:13 [ERROR] - Application startup failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaAutoConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1628)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1078)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:857)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:543)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107)
+	at com.origen.faceshare.Application.main(Application.java:21)
+Caused by: javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.persistenceException(EntityManagerFactoryBuilderImpl.java:954)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:882)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:60)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:353)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:370)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:359)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1687)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1624)
+	... 16 common frames omitted
+Caused by: org.hibernate.tool.schema.spi.SchemaManagementException: Unable to open JDBC connection for schema management target
+	at org.hibernate.tool.schema.internal.TargetDatabaseImpl.prepare(TargetDatabaseImpl.java:42)
+	at org.hibernate.tool.schema.internal.SchemaMigratorImpl.doMigration(SchemaMigratorImpl.java:57)
+	at org.hibernate.tool.hbm2ddl.SchemaUpdate.execute(SchemaUpdate.java:134)
+	at org.hibernate.tool.hbm2ddl.SchemaUpdate.execute(SchemaUpdate.java:101)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:472)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:444)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:879)
+	... 22 common frames omitted
+Caused by: com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:989)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:341)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2192)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2225)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2024)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:779)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:389)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:330)
+	at org.apache.tomcat.jdbc.pool.PooledConnection.connectUsingDriver(PooledConnection.java:310)
+	at org.apache.tomcat.jdbc.pool.PooledConnection.connect(PooledConnection.java:203)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.createConnection(ConnectionPool.java:735)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.borrowConnection(ConnectionPool.java:667)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.init(ConnectionPool.java:482)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.<init>(ConnectionPool.java:154)
+	at org.apache.tomcat.jdbc.pool.DataSourceProxy.pCreatePool(DataSourceProxy.java:118)
+	at org.apache.tomcat.jdbc.pool.DataSourceProxy.createPool(DataSourceProxy.java:107)
+	at org.apache.tomcat.jdbc.pool.DataSourceProxy.getConnection(DataSourceProxy.java:131)
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:180)
+	at org.hibernate.tool.schema.internal.TargetDatabaseImpl.prepare(TargetDatabaseImpl.java:38)
+	... 28 common frames omitted
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:211)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:300)
+	... 52 common frames omitted
+2017-09-01 14:25:52 [INFO] - Starting Application on WangYiChao with PID 6160 (E:\workspace\FaceShare\target\classes started by 11 in E:\workspace\FaceShare)
+2017-09-01 14:25:52 [INFO] - No active profile set, falling back to default profiles: default
+2017-09-01 14:25:52 [INFO] - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4196c360: startup date [Fri Sep 01 14:25:52 CST 2017]; root of context hierarchy
+2017-09-01 14:25:52 [INFO] - HV000001: Hibernate Validator 5.3.5.Final
+2017-09-01 14:25:53 [INFO] - Multiple Spring Data modules found, entering strict repository configuration mode!
+2017-09-01 14:25:53 [INFO] - Multiple Spring Data modules found, entering strict repository configuration mode!
+2017-09-01 14:25:53 [INFO] - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.origen.faceshare.repository.MoodCommentReplyRepository.
+2017-09-01 14:25:53 [INFO] - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.origen.faceshare.repository.MoodCommentRepository.
+2017-09-01 14:25:53 [INFO] - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.origen.faceshare.repository.UserRepository.
+2017-09-01 14:25:53 [INFO] - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.origen.faceshare.repository.DiaryRepository.
+2017-09-01 14:25:53 [INFO] - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.origen.faceshare.repository.MoodRepository.
+2017-09-01 14:25:53 [INFO] - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.origen.faceshare.repository.UserMessageRepository.
+2017-09-01 14:25:54 [INFO] - Tomcat initialized with port(s): 8820 (http)
+2017-09-01 14:25:54 [INFO] - Starting service [Tomcat]
+2017-09-01 14:25:54 [INFO] - Starting Servlet Engine: Apache Tomcat/8.5.15
+2017-09-01 14:25:54 [INFO] - Initializing Spring embedded WebApplicationContext
+2017-09-01 14:25:54 [INFO] - Root WebApplicationContext: initialization completed in 2006 ms
+2017-09-01 14:25:54 [INFO] - Mapping servlet: 'dispatcherServlet' to [/]
+2017-09-01 14:25:54 [INFO] - Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-09-01 14:25:54 [INFO] - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-09-01 14:25:54 [INFO] - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-09-01 14:25:54 [INFO] - Mapping filter: 'requestContextFilter' to: [/*]
+2017-09-01 14:25:55 [INFO] - Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-09-01 14:25:55 [INFO] - HHH000412: Hibernate Core {5.0.12.Final}
+2017-09-01 14:25:55 [INFO] - HHH000206: hibernate.properties not found
+2017-09-01 14:25:55 [INFO] - HHH000021: Bytecode provider name : javassist
+2017-09-01 14:25:55 [INFO] - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-09-01 14:25:55 [INFO] - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-09-01 14:25:56 [INFO] - HHH000228: Running hbm2ddl schema update
+2017-09-01 14:25:56 [INFO] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-09-01 14:25:56 [INFO] - HHH000397: Using ASTQueryTranslatorFactory
+2017-09-01 14:25:57 [INFO] - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4196c360: startup date [Fri Sep 01 14:25:52 CST 2017]; root of context hierarchy
+2017-09-01 14:25:57 [INFO] - Mapped "{[/sendDiary]}" onto public org.springframework.web.servlet.ModelAndView com.origen.faceshare.controller.DiaryController.sendDiary(com.origen.faceshare.model.entity.Diary,javax.servlet.http.HttpSession)
+2017-09-01 14:25:57 [INFO] - Mapped "{[/diaryDetail]}" onto public org.springframework.web.servlet.ModelAndView com.origen.faceshare.controller.DiaryController.diaryDetail(java.lang.Integer)
+2017-09-01 14:25:57 [INFO] - Mapped "{[/deleteDiary]}" onto public org.springframework.web.servlet.ModelAndView com.origen.faceshare.controller.DiaryController.deleteDiary(java.lang.Integer)
+2017-09-01 14:25:57 [INFO] - Mapped "{[/updateDiary]}" onto public org.springframework.web.servlet.ModelAndView com.origen.faceshare.controller.DiaryController.updateDiary(com.origen.faceshare.model.entity.Diary)
+2017-09-01 14:25:57 [INFO] - Mapped "{[/moodShare]}" onto public org.springframework.web.servlet.ModelAndView com.origen.faceshare.controller.MoodsController.moodShare(javax.servlet.http.HttpSession,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,org.springframework.web.multipart.MultipartFile[],java.lang.String)
+2017-09-01 14:25:57 [INFO] - Mapped "{[/replyComment]}" onto public org.springframework.web.servlet.ModelAndView com.origen.faceshare.controller.MoodsController.replyComment(java.lang.Integer,java.lang.Integer,java.lang.String,javax.servlet.http.HttpSession,java.lang.String)
+2017-09-01 14:25:57 [INFO] - Mapped "{[/commentMood]}" onto public org.springframework.web.servlet.ModelAndView com.origen.faceshare.controller.MoodsController.commentMood(java.lang.Integer,java.lang.String,javax.servlet.http.HttpSession)
+2017-09-01 14:25:57 [INFO] - Mapped "{[/deleteMood]}" onto public org.springframework.web.servlet.ModelAndView com.origen.faceshare.controller.MoodsController.deleteMood(java.lang.Integer)
+2017-09-01 14:25:57 [INFO] - Mapped "{[/toIndex]}" onto public org.springframework.web.servlet.ModelAndView com.origen.faceshare.controller.NavigateController.toIndex(javax.servlet.http.HttpServletRequest)
+2017-09-01 14:25:57 [INFO] - Mapped "{[/toAddUserInfo]}" onto public org.springframework.web.servlet.ModelAndView com.origen.faceshare.controller.NavigateController.toAddUserInfo(javax.servlet.http.HttpSession)
+2017-09-01 14:25:57 [INFO] - Mapped "{[/]}" onto public org.springframework.web.servlet.ModelAndView com.origen.faceshare.controller.NavigateController.toLogin(javax.servlet.http.HttpServletRequest)
+2017-09-01 14:25:57 [INFO] - Mapped "{[/toFaceShare]}" onto public org.springframework.web.servlet.ModelAndView com.origen.faceshare.controller.NavigateController.toFaceShare()
+2017-09-01 14:25:57 [INFO] - Mapped "{[/toAddFriend]}" onto public org.springframework.web.servlet.ModelAndView com.origen.faceshare.controller.NavigateController.toAddFriend()
+2017-09-01 14:25:57 [INFO] - Mapped "{[/toUserMessage]}" onto public org.springframework.web.servlet.ModelAndView com.origen.faceshare.controller.NavigateController.toUserMessage(java.lang.Integer,javax.servlet.http.HttpSession)
+2017-09-01 14:25:57 [INFO] - Mapped "{[/toDiary]}" onto public org.springframework.web.servlet.ModelAndView com.origen.faceshare.controller.NavigateController.toBlog()
+2017-09-01 14:25:57 [INFO] - Mapped "{[/toFriendDynamic]}" onto public org.springframework.web.servlet.ModelAndView com.origen.faceshare.controller.NavigateController.toFriendDynamic(javax.servlet.http.HttpSession,java.lang.Integer)
+2017-09-01 14:25:57 [INFO] - Mapped "{[/toMyDiary]}" onto public org.springframework.web.servlet.ModelAndView com.origen.faceshare.controller.NavigateController.toMyDiary(javax.servlet.http.HttpSession,java.lang.Integer)
+2017-09-01 14:25:57 [INFO] - Mapped "{[/toMyFriends]}" onto public org.springframework.web.servlet.ModelAndView com.origen.faceshare.controller.NavigateController.toMyFriends(javax.servlet.http.HttpSession,java.lang.Integer)
+2017-09-01 14:25:57 [INFO] - Mapped "{[/toMyDynamic]}" onto public org.springframework.web.servlet.ModelAndView com.origen.faceshare.controller.NavigateController.toMyDynamic(javax.servlet.http.HttpSession,java.lang.Integer)
+2017-09-01 14:25:57 [INFO] - Mapped "{[/register]}" onto public void com.origen.faceshare.controller.UserController.userRegister(com.origen.faceshare.model.entity.User,javax.servlet.http.HttpServletResponse,javax.servlet.http.HttpSession)
+2017-09-01 14:25:57 [INFO] - Mapped "{[/addUserInfo]}" onto public org.springframework.web.servlet.ModelAndView com.origen.faceshare.controller.UserController.addUserInfo(javax.servlet.http.HttpSession,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,org.springframework.web.multipart.MultipartFile,java.lang.String,java.lang.String)
+2017-09-01 14:25:57 [INFO] - Mapped "{[/searchUser]}" onto public void com.origen.faceshare.controller.UserController.searchUser(java.lang.String,java.lang.String,java.lang.String,javax.servlet.http.HttpServletResponse,javax.servlet.http.HttpSession)
+2017-09-01 14:25:57 [INFO] - Mapped "{[/login]}" onto public void com.origen.faceshare.controller.UserController.userLogin(com.origen.faceshare.model.entity.User,javax.servlet.http.HttpServletResponse,javax.servlet.http.HttpSession,java.lang.String)
+2017-09-01 14:25:57 [INFO] - Mapped "{[/loginout]}" onto public org.springframework.web.servlet.ModelAndView com.origen.faceshare.controller.UserController.loginout(javax.servlet.http.HttpSession)
+2017-09-01 14:25:57 [INFO] - Mapped "{[/addFriend]}" onto public void com.origen.faceshare.controller.UserController.addFriend(javax.servlet.http.HttpSession,java.lang.String,javax.servlet.http.HttpServletResponse)
+2017-09-01 14:25:57 [INFO] - Mapped "{[/userSendMessage]}" onto public void com.origen.faceshare.controller.UserController.userSendMessage(java.lang.Integer,java.lang.String,javax.servlet.http.HttpSession,javax.servlet.http.HttpServletResponse)
+2017-09-01 14:25:57 [INFO] - Mapped "{[/userMessageDeal]}" onto public void com.origen.faceshare.controller.UserController.userMessageDeal(java.lang.Integer,java.lang.Integer,java.lang.String,javax.servlet.http.HttpSession,java.lang.Integer,javax.servlet.http.HttpServletResponse)
+2017-09-01 14:25:57 [INFO] - Mapped "{[/showUserInfo]}" onto public void com.origen.faceshare.controller.UserController.showUserInfo(java.lang.Integer,javax.servlet.http.HttpServletResponse)
+2017-09-01 14:25:57 [INFO] - Mapped "{[/deleteFriend]}" onto public org.springframework.web.servlet.ModelAndView com.origen.faceshare.controller.UserController.deleteFriend(java.lang.Integer,javax.servlet.http.HttpSession)
+2017-09-01 14:25:57 [INFO] - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-09-01 14:25:57 [INFO] - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-09-01 14:25:57 [INFO] - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-09-01 14:25:57 [INFO] - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-09-01 14:25:57 [INFO] - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-09-01 14:25:58 [WARN] - spring-boot-starter-redis is deprecated as of Spring Boot 1.4, please migrate to spring-boot-starter-data-redis
+2017-09-01 14:25:58 [INFO] - Registering beans for JMX exposure on startup
+2017-09-01 14:25:58 [INFO] - Initializing ProtocolHandler ["http-nio-8820"]
+2017-09-01 14:25:58 [INFO] - Starting ProtocolHandler ["http-nio-8820"]
+2017-09-01 14:25:58 [INFO] - Using a shared selector for servlet write/read
+2017-09-01 14:25:58 [INFO] - Tomcat started on port(s): 8820 (http)
+2017-09-01 14:25:58 [INFO] - Started Application in 6.584 seconds (JVM running for 6.902)
+2017-09-01 14:26:04 [INFO] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-09-01 14:26:04 [INFO] - FrameworkServlet 'dispatcherServlet': initialization started
+2017-09-01 14:26:04 [INFO] - FrameworkServlet 'dispatcherServlet': initialization completed in 18 ms
+2017-09-01 14:26:05 [INFO] - [THYMELEAF] INITIALIZING TEMPLATE ENGINE
+2017-09-01 14:26:05 [INFO] - [THYMELEAF] INITIALIZING TEMPLATE RESOLVER: org.thymeleaf.spring4.templateresolver.SpringResourceTemplateResolver
+2017-09-01 14:26:05 [INFO] - [THYMELEAF] TEMPLATE RESOLVER INITIALIZED OK
+2017-09-01 14:26:05 [INFO] - [THYMELEAF] INITIALIZING MESSAGE RESOLVER: org.thymeleaf.spring4.messageresolver.SpringMessageResolver
+2017-09-01 14:26:05 [INFO] - [THYMELEAF] MESSAGE RESOLVER INITIALIZED OK
+2017-09-01 14:26:05 [INFO] - [THYMELEAF] TEMPLATE ENGINE INITIALIZED
+2017-09-01 14:26:16 [INFO] - origen 的收到信息条数已更新
+2017-09-01 14:54:08 [INFO] - Starting Application on WangYiChao with PID 7348 (E:\workspace\FaceShare\target\classes started by 11 in E:\workspace\FaceShare)
+2017-09-01 14:54:08 [INFO] - No active profile set, falling back to default profiles: default
+2017-09-01 14:54:08 [INFO] - HV000001: Hibernate Validator 5.3.5.Final
+2017-09-01 14:54:08 [INFO] - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7fcf2fc1: startup date [Fri Sep 01 14:54:08 CST 2017]; root of context hierarchy
+2017-09-01 14:54:09 [INFO] - Multiple Spring Data modules found, entering strict repository configuration mode!
+2017-09-01 14:54:09 [INFO] - Multiple Spring Data modules found, entering strict repository configuration mode!
+2017-09-01 14:54:09 [INFO] - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.origen.faceshare.repository.MoodCommentReplyRepository.
+2017-09-01 14:54:09 [INFO] - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.origen.faceshare.repository.MoodCommentRepository.
+2017-09-01 14:54:09 [INFO] - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.origen.faceshare.repository.UserRepository.
+2017-09-01 14:54:09 [INFO] - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.origen.faceshare.repository.DiaryRepository.
+2017-09-01 14:54:09 [INFO] - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.origen.faceshare.repository.MoodRepository.
+2017-09-01 14:54:09 [INFO] - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.origen.faceshare.repository.UserMessageRepository.
+2017-09-01 14:54:10 [INFO] - Tomcat initialized with port(s): 8820 (http)
+2017-09-01 14:54:10 [INFO] - Starting service [Tomcat]
+2017-09-01 14:54:10 [INFO] - Starting Servlet Engine: Apache Tomcat/8.5.15
+2017-09-01 14:54:10 [INFO] - Initializing Spring embedded WebApplicationContext
+2017-09-01 14:54:10 [INFO] - Root WebApplicationContext: initialization completed in 1779 ms
+2017-09-01 14:54:10 [INFO] - Mapping servlet: 'dispatcherServlet' to [/]
+2017-09-01 14:54:10 [INFO] - Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-09-01 14:54:10 [INFO] - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-09-01 14:54:10 [INFO] - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-09-01 14:54:10 [INFO] - Mapping filter: 'requestContextFilter' to: [/*]
+2017-09-01 14:54:10 [INFO] - Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-09-01 14:54:10 [INFO] - HHH000412: Hibernate Core {5.0.12.Final}
+2017-09-01 14:54:10 [INFO] - HHH000206: hibernate.properties not found
+2017-09-01 14:54:10 [INFO] - HHH000021: Bytecode provider name : javassist
+2017-09-01 14:54:10 [INFO] - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-09-01 14:54:11 [INFO] - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-09-01 14:54:11 [INFO] - HHH000228: Running hbm2ddl schema update
+2017-09-01 14:54:12 [INFO] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-09-01 14:54:12 [INFO] - HHH000397: Using ASTQueryTranslatorFactory
+2017-09-01 14:54:13 [INFO] - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7fcf2fc1: startup date [Fri Sep 01 14:54:08 CST 2017]; root of context hierarchy
+2017-09-01 14:54:13 [INFO] - Mapped "{[/deleteDiary]}" onto public org.springframework.web.servlet.ModelAndView com.origen.faceshare.controller.DiaryController.deleteDiary(java.lang.Integer)
+2017-09-01 14:54:13 [INFO] - Mapped "{[/sendDiary]}" onto public org.springframework.web.servlet.ModelAndView com.origen.faceshare.controller.DiaryController.sendDiary(com.origen.faceshare.model.entity.Diary,javax.servlet.http.HttpSession)
+2017-09-01 14:54:13 [INFO] - Mapped "{[/updateDiary]}" onto public org.springframework.web.servlet.ModelAndView com.origen.faceshare.controller.DiaryController.updateDiary(com.origen.faceshare.model.entity.Diary)
+2017-09-01 14:54:13 [INFO] - Mapped "{[/diaryDetail]}" onto public org.springframework.web.servlet.ModelAndView com.origen.faceshare.controller.DiaryController.diaryDetail(java.lang.Integer)
+2017-09-01 14:54:13 [INFO] - Mapped "{[/moodShare]}" onto public org.springframework.web.servlet.ModelAndView com.origen.faceshare.controller.MoodsController.moodShare(javax.servlet.http.HttpSession,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,org.springframework.web.multipart.MultipartFile[],java.lang.String)
+2017-09-01 14:54:13 [INFO] - Mapped "{[/commentMood]}" onto public org.springframework.web.servlet.ModelAndView com.origen.faceshare.controller.MoodsController.commentMood(java.lang.Integer,java.lang.String,javax.servlet.http.HttpSession)
+2017-09-01 14:54:13 [INFO] - Mapped "{[/replyComment]}" onto public org.springframework.web.servlet.ModelAndView com.origen.faceshare.controller.MoodsController.replyComment(java.lang.Integer,java.lang.Integer,java.lang.String,javax.servlet.http.HttpSession,java.lang.String)
+2017-09-01 14:54:13 [INFO] - Mapped "{[/deleteMood]}" onto public org.springframework.web.servlet.ModelAndView com.origen.faceshare.controller.MoodsController.deleteMood(java.lang.Integer)
+2017-09-01 14:54:13 [INFO] - Mapped "{[/toIndex]}" onto public org.springframework.web.servlet.ModelAndView com.origen.faceshare.controller.NavigateController.toIndex(javax.servlet.http.HttpServletRequest)
+2017-09-01 14:54:13 [INFO] - Mapped "{[/toFriendDynamic]}" onto public org.springframework.web.servlet.ModelAndView com.origen.faceshare.controller.NavigateController.toFriendDynamic(javax.servlet.http.HttpSession,java.lang.Integer)
+2017-09-01 14:54:13 [INFO] - Mapped "{[/toMyDiary]}" onto public org.springframework.web.servlet.ModelAndView com.origen.faceshare.controller.NavigateController.toMyDiary(javax.servlet.http.HttpSession,java.lang.Integer)
+2017-09-01 14:54:13 [INFO] - Mapped "{[/toMyFriends]}" onto public org.springframework.web.servlet.ModelAndView com.origen.faceshare.controller.NavigateController.toMyFriends(javax.servlet.http.HttpSession,java.lang.Integer)
+2017-09-01 14:54:13 [INFO] - Mapped "{[/toFaceShare]}" onto public org.springframework.web.servlet.ModelAndView com.origen.faceshare.controller.NavigateController.toFaceShare()
+2017-09-01 14:54:13 [INFO] - Mapped "{[/]}" onto public org.springframework.web.servlet.ModelAndView com.origen.faceshare.controller.NavigateController.toLogin(javax.servlet.http.HttpServletRequest)
+2017-09-01 14:54:13 [INFO] - Mapped "{[/toMyDynamic]}" onto public org.springframework.web.servlet.ModelAndView com.origen.faceshare.controller.NavigateController.toMyDynamic(javax.servlet.http.HttpSession,java.lang.Integer)
+2017-09-01 14:54:13 [INFO] - Mapped "{[/toUserMessage]}" onto public org.springframework.web.servlet.ModelAndView com.origen.faceshare.controller.NavigateController.toUserMessage(java.lang.Integer,javax.servlet.http.HttpSession)
+2017-09-01 14:54:13 [INFO] - Mapped "{[/toAddUserInfo]}" onto public org.springframework.web.servlet.ModelAndView com.origen.faceshare.controller.NavigateController.toAddUserInfo(javax.servlet.http.HttpSession)
+2017-09-01 14:54:13 [INFO] - Mapped "{[/toDiary]}" onto public org.springframework.web.servlet.ModelAndView com.origen.faceshare.controller.NavigateController.toBlog()
+2017-09-01 14:54:13 [INFO] - Mapped "{[/toAddFriend]}" onto public org.springframework.web.servlet.ModelAndView com.origen.faceshare.controller.NavigateController.toAddFriend()
+2017-09-01 14:54:13 [INFO] - Mapped "{[/register]}" onto public void com.origen.faceshare.controller.UserController.userRegister(com.origen.faceshare.model.entity.User,javax.servlet.http.HttpServletResponse,javax.servlet.http.HttpSession)
+2017-09-01 14:54:13 [INFO] - Mapped "{[/searchUser]}" onto public void com.origen.faceshare.controller.UserController.searchUser(java.lang.String,java.lang.String,java.lang.String,javax.servlet.http.HttpServletResponse,javax.servlet.http.HttpSession)
+2017-09-01 14:54:13 [INFO] - Mapped "{[/userSendMessage]}" onto public void com.origen.faceshare.controller.UserController.userSendMessage(java.lang.Integer,java.lang.String,javax.servlet.http.HttpSession,javax.servlet.http.HttpServletResponse)
+2017-09-01 14:54:13 [INFO] - Mapped "{[/showUserInfo]}" onto public void com.origen.faceshare.controller.UserController.showUserInfo(java.lang.Integer,javax.servlet.http.HttpServletResponse)
+2017-09-01 14:54:13 [INFO] - Mapped "{[/deleteFriend]}" onto public org.springframework.web.servlet.ModelAndView com.origen.faceshare.controller.UserController.deleteFriend(java.lang.Integer,javax.servlet.http.HttpSession)
+2017-09-01 14:54:13 [INFO] - Mapped "{[/userMessageDeal]}" onto public void com.origen.faceshare.controller.UserController.userMessageDeal(java.lang.Integer,java.lang.Integer,java.lang.String,javax.servlet.http.HttpSession,java.lang.Integer,javax.servlet.http.HttpServletResponse)
+2017-09-01 14:54:13 [INFO] - Mapped "{[/addFriend]}" onto public void com.origen.faceshare.controller.UserController.addFriend(javax.servlet.http.HttpSession,java.lang.String,javax.servlet.http.HttpServletResponse)
+2017-09-01 14:54:13 [INFO] - Mapped "{[/addUserInfo]}" onto public org.springframework.web.servlet.ModelAndView com.origen.faceshare.controller.UserController.addUserInfo(javax.servlet.http.HttpSession,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,org.springframework.web.multipart.MultipartFile,java.lang.String,java.lang.String)
+2017-09-01 14:54:13 [INFO] - Mapped "{[/loginout]}" onto public org.springframework.web.servlet.ModelAndView com.origen.faceshare.controller.UserController.loginout(javax.servlet.http.HttpSession)
+2017-09-01 14:54:13 [INFO] - Mapped "{[/login]}" onto public void com.origen.faceshare.controller.UserController.userLogin(com.origen.faceshare.model.entity.User,javax.servlet.http.HttpServletResponse,javax.servlet.http.HttpSession,java.lang.String)
+2017-09-01 14:54:13 [INFO] - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-09-01 14:54:13 [INFO] - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-09-01 14:54:13 [INFO] - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-09-01 14:54:13 [INFO] - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-09-01 14:54:13 [INFO] - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-09-01 14:54:13 [WARN] - spring-boot-starter-redis is deprecated as of Spring Boot 1.4, please migrate to spring-boot-starter-data-redis
+2017-09-01 14:54:14 [INFO] - Registering beans for JMX exposure on startup
+2017-09-01 14:54:14 [INFO] - Initializing ProtocolHandler ["http-nio-8820"]
+2017-09-01 14:54:14 [INFO] - Starting ProtocolHandler ["http-nio-8820"]
+2017-09-01 14:54:14 [INFO] - Using a shared selector for servlet write/read
+2017-09-01 14:54:14 [INFO] - Tomcat started on port(s): 8820 (http)
+2017-09-01 14:54:14 [INFO] - Started Application in 6.384 seconds (JVM running for 6.708)
+2017-09-01 14:54:44 [INFO] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-09-01 14:54:44 [INFO] - FrameworkServlet 'dispatcherServlet': initialization started
+2017-09-01 14:54:44 [INFO] - FrameworkServlet 'dispatcherServlet': initialization completed in 18 ms
+2017-09-01 14:54:44 [INFO] - [THYMELEAF] INITIALIZING TEMPLATE ENGINE
+2017-09-01 14:54:45 [INFO] - [THYMELEAF] INITIALIZING TEMPLATE RESOLVER: org.thymeleaf.spring4.templateresolver.SpringResourceTemplateResolver
+2017-09-01 14:54:45 [INFO] - [THYMELEAF] TEMPLATE RESOLVER INITIALIZED OK
+2017-09-01 14:54:45 [INFO] - [THYMELEAF] INITIALIZING MESSAGE RESOLVER: org.thymeleaf.spring4.messageresolver.SpringMessageResolver
+2017-09-01 14:54:45 [INFO] - [THYMELEAF] MESSAGE RESOLVER INITIALIZED OK
+2017-09-01 14:54:45 [INFO] - [THYMELEAF] TEMPLATE ENGINE INITIALIZED
+2017-09-01 14:54:51 [INFO] - origen 的收到信息条数已更新
+2017-09-01 15:10:51 [INFO] - noobgirl 的收到信息条数已更新
+2017-09-01 15:11:02 [ERROR] - Executing an update/delete query; nested exception is javax.persistence.TransactionRequiredException: Executing an update/delete query
+org.springframework.dao.InvalidDataAccessApiUsageException: Executing an update/delete query; nested exception is javax.persistence.TransactionRequiredException: Executing an update/delete query
+	at org.springframework.orm.jpa.EntityManagerFactoryUtils.convertJpaAccessExceptionIfPossible(EntityManagerFactoryUtils.java:413)
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.translateExceptionIfPossible(HibernateJpaDialect.java:246)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.translateExceptionIfPossible(AbstractEntityManagerFactoryBean.java:488)
+	at org.springframework.dao.support.ChainedPersistenceExceptionTranslator.translateExceptionIfPossible(ChainedPersistenceExceptionTranslator.java:59)
+	at org.springframework.dao.support.DataAccessUtils.translateIfNecessary(DataAccessUtils.java:213)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:147)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:133)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:92)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.data.repository.core.support.SurroundingTransactionDetectorMethodInterceptor.invoke(SurroundingTransactionDetectorMethodInterceptor.java:57)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:213)
+	at com.sun.proxy.$Proxy98.changeMessageState(Unknown Source)
+	at com.origen.faceshare.service.impl.UserMessageServiceImpl.updateMessageState(UserMessageServiceImpl.java:95)
+	at com.origen.faceshare.controller.UserController.userMessageDeal(UserController.java:333)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:133)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:97)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:967)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:872)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:661)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:105)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:478)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:80)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:799)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:861)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1455)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: javax.persistence.TransactionRequiredException: Executing an update/delete query
+	at org.hibernate.jpa.spi.AbstractQueryImpl.executeUpdate(AbstractQueryImpl.java:54)
+	at org.springframework.data.jpa.repository.query.JpaQueryExecution$ModifyingExecution.doExecute(JpaQueryExecution.java:238)
+	at org.springframework.data.jpa.repository.query.JpaQueryExecution.execute(JpaQueryExecution.java:85)
+	at org.springframework.data.jpa.repository.query.AbstractJpaQuery.doExecute(AbstractJpaQuery.java:116)
+	at org.springframework.data.jpa.repository.query.AbstractJpaQuery.execute(AbstractJpaQuery.java:106)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.doInvoke(RepositoryFactorySupport.java:483)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.invoke(RepositoryFactorySupport.java:461)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:56)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:99)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:282)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:96)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:136)
+	... 65 common frames omitted
+2017-09-01 15:11:07 [ERROR] - Executing an update/delete query; nested exception is javax.persistence.TransactionRequiredException: Executing an update/delete query
+org.springframework.dao.InvalidDataAccessApiUsageException: Executing an update/delete query; nested exception is javax.persistence.TransactionRequiredException: Executing an update/delete query
+	at org.springframework.orm.jpa.EntityManagerFactoryUtils.convertJpaAccessExceptionIfPossible(EntityManagerFactoryUtils.java:413)
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.translateExceptionIfPossible(HibernateJpaDialect.java:246)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.translateExceptionIfPossible(AbstractEntityManagerFactoryBean.java:488)
+	at org.springframework.dao.support.ChainedPersistenceExceptionTranslator.translateExceptionIfPossible(ChainedPersistenceExceptionTranslator.java:59)
+	at org.springframework.dao.support.DataAccessUtils.translateIfNecessary(DataAccessUtils.java:213)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:147)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:133)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:92)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.data.repository.core.support.SurroundingTransactionDetectorMethodInterceptor.invoke(SurroundingTransactionDetectorMethodInterceptor.java:57)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:213)
+	at com.sun.proxy.$Proxy98.changeMessageState(Unknown Source)
+	at com.origen.faceshare.service.impl.UserMessageServiceImpl.updateMessageState(UserMessageServiceImpl.java:95)
+	at com.origen.faceshare.controller.UserController.userMessageDeal(UserController.java:333)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:133)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:97)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:967)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:872)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:661)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:105)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:478)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:80)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:799)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:861)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1455)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: javax.persistence.TransactionRequiredException: Executing an update/delete query
+	at org.hibernate.jpa.spi.AbstractQueryImpl.executeUpdate(AbstractQueryImpl.java:54)
+	at org.springframework.data.jpa.repository.query.JpaQueryExecution$ModifyingExecution.doExecute(JpaQueryExecution.java:238)
+	at org.springframework.data.jpa.repository.query.JpaQueryExecution.execute(JpaQueryExecution.java:85)
+	at org.springframework.data.jpa.repository.query.AbstractJpaQuery.doExecute(AbstractJpaQuery.java:116)
+	at org.springframework.data.jpa.repository.query.AbstractJpaQuery.execute(AbstractJpaQuery.java:106)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.doInvoke(RepositoryFactorySupport.java:483)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.invoke(RepositoryFactorySupport.java:461)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:56)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:99)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:282)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:96)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:136)
+	... 65 common frames omitted
+2017-09-01 15:16:42 [INFO] - Starting Application on WangYiChao with PID 7372 (E:\workspace\FaceShare\target\classes started by 11 in E:\workspace\FaceShare)
+2017-09-01 15:16:42 [INFO] - No active profile set, falling back to default profiles: default
+2017-09-01 15:16:42 [INFO] - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7fcf2fc1: startup date [Fri Sep 01 15:16:42 CST 2017]; root of context hierarchy
+2017-09-01 15:16:42 [INFO] - HV000001: Hibernate Validator 5.3.5.Final
+2017-09-01 15:16:43 [INFO] - Multiple Spring Data modules found, entering strict repository configuration mode!
+2017-09-01 15:16:43 [INFO] - Multiple Spring Data modules found, entering strict repository configuration mode!
+2017-09-01 15:16:43 [INFO] - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.origen.faceshare.repository.MoodCommentReplyRepository.
+2017-09-01 15:16:43 [INFO] - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.origen.faceshare.repository.MoodCommentRepository.
+2017-09-01 15:16:43 [INFO] - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.origen.faceshare.repository.UserRepository.
+2017-09-01 15:16:43 [INFO] - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.origen.faceshare.repository.DiaryRepository.
+2017-09-01 15:16:43 [INFO] - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.origen.faceshare.repository.MoodRepository.
+2017-09-01 15:16:43 [INFO] - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.origen.faceshare.repository.UserMessageRepository.
+2017-09-01 15:16:44 [INFO] - Tomcat initialized with port(s): 8820 (http)
+2017-09-01 15:16:44 [INFO] - Starting service [Tomcat]
+2017-09-01 15:16:44 [INFO] - Starting Servlet Engine: Apache Tomcat/8.5.15
+2017-09-01 15:16:44 [INFO] - Initializing Spring embedded WebApplicationContext
+2017-09-01 15:16:44 [INFO] - Root WebApplicationContext: initialization completed in 1847 ms
+2017-09-01 15:16:44 [INFO] - Mapping servlet: 'dispatcherServlet' to [/]
+2017-09-01 15:16:44 [INFO] - Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-09-01 15:16:44 [INFO] - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-09-01 15:16:44 [INFO] - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-09-01 15:16:44 [INFO] - Mapping filter: 'requestContextFilter' to: [/*]
+2017-09-01 15:16:45 [INFO] - Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-09-01 15:16:45 [INFO] - HHH000412: Hibernate Core {5.0.12.Final}
+2017-09-01 15:16:45 [INFO] - HHH000206: hibernate.properties not found
+2017-09-01 15:16:45 [INFO] - HHH000021: Bytecode provider name : javassist
+2017-09-01 15:16:45 [INFO] - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-09-01 15:16:45 [INFO] - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-09-01 15:16:46 [INFO] - HHH000228: Running hbm2ddl schema update
+2017-09-01 15:16:46 [INFO] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-09-01 15:16:46 [INFO] - HHH000397: Using ASTQueryTranslatorFactory
+2017-09-01 15:16:47 [INFO] - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7fcf2fc1: startup date [Fri Sep 01 15:16:42 CST 2017]; root of context hierarchy
+2017-09-01 15:16:47 [INFO] - Mapped "{[/sendDiary]}" onto public org.springframework.web.servlet.ModelAndView com.origen.faceshare.controller.DiaryController.sendDiary(com.origen.faceshare.model.entity.Diary,javax.servlet.http.HttpSession)
+2017-09-01 15:16:47 [INFO] - Mapped "{[/deleteDiary]}" onto public org.springframework.web.servlet.ModelAndView com.origen.faceshare.controller.DiaryController.deleteDiary(java.lang.Integer)
+2017-09-01 15:16:47 [INFO] - Mapped "{[/diaryDetail]}" onto public org.springframework.web.servlet.ModelAndView com.origen.faceshare.controller.DiaryController.diaryDetail(java.lang.Integer)
+2017-09-01 15:16:47 [INFO] - Mapped "{[/updateDiary]}" onto public org.springframework.web.servlet.ModelAndView com.origen.faceshare.controller.DiaryController.updateDiary(com.origen.faceshare.model.entity.Diary)
+2017-09-01 15:16:47 [INFO] - Mapped "{[/commentMood]}" onto public org.springframework.web.servlet.ModelAndView com.origen.faceshare.controller.MoodsController.commentMood(java.lang.Integer,java.lang.String,javax.servlet.http.HttpSession)
+2017-09-01 15:16:47 [INFO] - Mapped "{[/replyComment]}" onto public org.springframework.web.servlet.ModelAndView com.origen.faceshare.controller.MoodsController.replyComment(java.lang.Integer,java.lang.Integer,java.lang.String,javax.servlet.http.HttpSession,java.lang.String)
+2017-09-01 15:16:47 [INFO] - Mapped "{[/deleteMood]}" onto public org.springframework.web.servlet.ModelAndView com.origen.faceshare.controller.MoodsController.deleteMood(java.lang.Integer)
+2017-09-01 15:16:47 [INFO] - Mapped "{[/moodShare]}" onto public org.springframework.web.servlet.ModelAndView com.origen.faceshare.controller.MoodsController.moodShare(javax.servlet.http.HttpSession,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,org.springframework.web.multipart.MultipartFile[],java.lang.String)
+2017-09-01 15:16:47 [INFO] - Mapped "{[/toIndex]}" onto public org.springframework.web.servlet.ModelAndView com.origen.faceshare.controller.NavigateController.toIndex(javax.servlet.http.HttpServletRequest)
+2017-09-01 15:16:47 [INFO] - Mapped "{[/toMyFriends]}" onto public org.springframework.web.servlet.ModelAndView com.origen.faceshare.controller.NavigateController.toMyFriends(javax.servlet.http.HttpSession,java.lang.Integer)
+2017-09-01 15:16:47 [INFO] - Mapped "{[/toMyDiary]}" onto public org.springframework.web.servlet.ModelAndView com.origen.faceshare.controller.NavigateController.toMyDiary(javax.servlet.http.HttpSession,java.lang.Integer)
+2017-09-01 15:16:47 [INFO] - Mapped "{[/toUserMessage]}" onto public org.springframework.web.servlet.ModelAndView com.origen.faceshare.controller.NavigateController.toUserMessage(java.lang.Integer,javax.servlet.http.HttpSession)
+2017-09-01 15:16:47 [INFO] - Mapped "{[/toAddFriend]}" onto public org.springframework.web.servlet.ModelAndView com.origen.faceshare.controller.NavigateController.toAddFriend()
+2017-09-01 15:16:47 [INFO] - Mapped "{[/toAddUserInfo]}" onto public org.springframework.web.servlet.ModelAndView com.origen.faceshare.controller.NavigateController.toAddUserInfo(javax.servlet.http.HttpSession)
+2017-09-01 15:16:47 [INFO] - Mapped "{[/toFriendDynamic]}" onto public org.springframework.web.servlet.ModelAndView com.origen.faceshare.controller.NavigateController.toFriendDynamic(javax.servlet.http.HttpSession,java.lang.Integer)
+2017-09-01 15:16:47 [INFO] - Mapped "{[/toMyDynamic]}" onto public org.springframework.web.servlet.ModelAndView com.origen.faceshare.controller.NavigateController.toMyDynamic(javax.servlet.http.HttpSession,java.lang.Integer)
+2017-09-01 15:16:47 [INFO] - Mapped "{[/]}" onto public org.springframework.web.servlet.ModelAndView com.origen.faceshare.controller.NavigateController.toLogin(javax.servlet.http.HttpServletRequest)
+2017-09-01 15:16:47 [INFO] - Mapped "{[/toDiary]}" onto public org.springframework.web.servlet.ModelAndView com.origen.faceshare.controller.NavigateController.toBlog()
+2017-09-01 15:16:47 [INFO] - Mapped "{[/toFaceShare]}" onto public org.springframework.web.servlet.ModelAndView com.origen.faceshare.controller.NavigateController.toFaceShare()
+2017-09-01 15:16:47 [INFO] - Mapped "{[/loginout]}" onto public org.springframework.web.servlet.ModelAndView com.origen.faceshare.controller.UserController.loginout(javax.servlet.http.HttpSession)
+2017-09-01 15:16:47 [INFO] - Mapped "{[/addFriend]}" onto public void com.origen.faceshare.controller.UserController.addFriend(javax.servlet.http.HttpSession,java.lang.String,javax.servlet.http.HttpServletResponse)
+2017-09-01 15:16:47 [INFO] - Mapped "{[/userSendMessage]}" onto public void com.origen.faceshare.controller.UserController.userSendMessage(java.lang.Integer,java.lang.String,javax.servlet.http.HttpSession,javax.servlet.http.HttpServletResponse)
+2017-09-01 15:16:47 [INFO] - Mapped "{[/deleteFriend]}" onto public org.springframework.web.servlet.ModelAndView com.origen.faceshare.controller.UserController.deleteFriend(java.lang.Integer,javax.servlet.http.HttpSession)
+2017-09-01 15:16:47 [INFO] - Mapped "{[/searchUser]}" onto public void com.origen.faceshare.controller.UserController.searchUser(java.lang.String,java.lang.String,java.lang.String,javax.servlet.http.HttpServletResponse,javax.servlet.http.HttpSession)
+2017-09-01 15:16:47 [INFO] - Mapped "{[/addUserInfo]}" onto public org.springframework.web.servlet.ModelAndView com.origen.faceshare.controller.UserController.addUserInfo(javax.servlet.http.HttpSession,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,org.springframework.web.multipart.MultipartFile,java.lang.String,java.lang.String)
+2017-09-01 15:16:47 [INFO] - Mapped "{[/userMessageDeal]}" onto public void com.origen.faceshare.controller.UserController.userMessageDeal(java.lang.Integer,java.lang.Integer,java.lang.String,javax.servlet.http.HttpSession,java.lang.Integer,javax.servlet.http.HttpServletResponse)
+2017-09-01 15:16:47 [INFO] - Mapped "{[/showUserInfo]}" onto public void com.origen.faceshare.controller.UserController.showUserInfo(java.lang.Integer,javax.servlet.http.HttpServletResponse)
+2017-09-01 15:16:47 [INFO] - Mapped "{[/register]}" onto public void com.origen.faceshare.controller.UserController.userRegister(com.origen.faceshare.model.entity.User,javax.servlet.http.HttpServletResponse,javax.servlet.http.HttpSession)
+2017-09-01 15:16:47 [INFO] - Mapped "{[/login]}" onto public void com.origen.faceshare.controller.UserController.userLogin(com.origen.faceshare.model.entity.User,javax.servlet.http.HttpServletResponse,javax.servlet.http.HttpSession,java.lang.String)
+2017-09-01 15:16:47 [INFO] - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-09-01 15:16:47 [INFO] - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-09-01 15:16:47 [INFO] - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-09-01 15:16:47 [INFO] - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-09-01 15:16:47 [INFO] - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-09-01 15:16:48 [WARN] - spring-boot-starter-redis is deprecated as of Spring Boot 1.4, please migrate to spring-boot-starter-data-redis
+2017-09-01 15:16:48 [INFO] - Registering beans for JMX exposure on startup
+2017-09-01 15:16:48 [INFO] - Initializing ProtocolHandler ["http-nio-8820"]
+2017-09-01 15:16:48 [INFO] - Starting ProtocolHandler ["http-nio-8820"]
+2017-09-01 15:16:48 [INFO] - Using a shared selector for servlet write/read
+2017-09-01 15:16:48 [INFO] - Tomcat started on port(s): 8820 (http)
+2017-09-01 15:16:48 [INFO] - Started Application in 6.187 seconds (JVM running for 6.514)
+2017-09-01 15:17:23 [INFO] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-09-01 15:17:23 [INFO] - FrameworkServlet 'dispatcherServlet': initialization started
+2017-09-01 15:17:23 [INFO] - FrameworkServlet 'dispatcherServlet': initialization completed in 23 ms
+2017-09-01 15:17:23 [INFO] - 验证失败，用户未登录
+2017-09-01 15:17:23 [INFO] - [THYMELEAF] INITIALIZING TEMPLATE ENGINE
+2017-09-01 15:17:23 [INFO] - [THYMELEAF] INITIALIZING TEMPLATE RESOLVER: org.thymeleaf.spring4.templateresolver.SpringResourceTemplateResolver
+2017-09-01 15:17:23 [INFO] - [THYMELEAF] TEMPLATE RESOLVER INITIALIZED OK
+2017-09-01 15:17:23 [INFO] - [THYMELEAF] INITIALIZING MESSAGE RESOLVER: org.thymeleaf.spring4.messageresolver.SpringMessageResolver
+2017-09-01 15:17:23 [INFO] - [THYMELEAF] MESSAGE RESOLVER INITIALIZED OK
+2017-09-01 15:17:23 [INFO] - [THYMELEAF] TEMPLATE ENGINE INITIALIZED
+2017-09-01 15:17:28 [INFO] - origen 的收到信息条数已更新
+2017-09-01 15:18:00 [INFO] - noobgirl 的收到信息条数已更新
+2017-09-01 15:19:26 [INFO] - noobgirl 的收到信息条数已更新
+2017-09-01 15:20:25 [INFO] - 验证失败，用户未登录
+2017-09-01 15:20:34 [INFO] - noobgirl 的收到信息条数已更新
+2017-09-01 15:20:56 [ERROR] - Executing an update/delete query; nested exception is javax.persistence.TransactionRequiredException: Executing an update/delete query
+org.springframework.dao.InvalidDataAccessApiUsageException: Executing an update/delete query; nested exception is javax.persistence.TransactionRequiredException: Executing an update/delete query
+	at org.springframework.orm.jpa.EntityManagerFactoryUtils.convertJpaAccessExceptionIfPossible(EntityManagerFactoryUtils.java:413)
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.translateExceptionIfPossible(HibernateJpaDialect.java:246)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.translateExceptionIfPossible(AbstractEntityManagerFactoryBean.java:488)
+	at org.springframework.dao.support.ChainedPersistenceExceptionTranslator.translateExceptionIfPossible(ChainedPersistenceExceptionTranslator.java:59)
+	at org.springframework.dao.support.DataAccessUtils.translateIfNecessary(DataAccessUtils.java:213)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:147)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:133)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:92)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.data.repository.core.support.SurroundingTransactionDetectorMethodInterceptor.invoke(SurroundingTransactionDetectorMethodInterceptor.java:57)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:213)
+	at com.sun.proxy.$Proxy98.changeMessageState(Unknown Source)
+	at com.origen.faceshare.service.impl.UserMessageServiceImpl.updateMessageState(UserMessageServiceImpl.java:95)
+	at com.origen.faceshare.controller.UserController.userMessageDeal(UserController.java:333)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:133)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:97)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:967)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:872)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:661)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:105)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:478)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:80)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:799)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:861)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1455)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: javax.persistence.TransactionRequiredException: Executing an update/delete query
+	at org.hibernate.jpa.spi.AbstractQueryImpl.executeUpdate(AbstractQueryImpl.java:54)
+	at org.springframework.data.jpa.repository.query.JpaQueryExecution$ModifyingExecution.doExecute(JpaQueryExecution.java:238)
+	at org.springframework.data.jpa.repository.query.JpaQueryExecution.execute(JpaQueryExecution.java:85)
+	at org.springframework.data.jpa.repository.query.AbstractJpaQuery.doExecute(AbstractJpaQuery.java:116)
+	at org.springframework.data.jpa.repository.query.AbstractJpaQuery.execute(AbstractJpaQuery.java:106)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.doInvoke(RepositoryFactorySupport.java:483)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.invoke(RepositoryFactorySupport.java:461)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:56)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:99)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:282)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:96)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:136)
+	... 65 common frames omitted
+2017-09-01 15:22:11 [ERROR] - Executing an update/delete query; nested exception is javax.persistence.TransactionRequiredException: Executing an update/delete query
+org.springframework.dao.InvalidDataAccessApiUsageException: Executing an update/delete query; nested exception is javax.persistence.TransactionRequiredException: Executing an update/delete query
+	at org.springframework.orm.jpa.EntityManagerFactoryUtils.convertJpaAccessExceptionIfPossible(EntityManagerFactoryUtils.java:413)
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.translateExceptionIfPossible(HibernateJpaDialect.java:246)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.translateExceptionIfPossible(AbstractEntityManagerFactoryBean.java:488)
+	at org.springframework.dao.support.ChainedPersistenceExceptionTranslator.translateExceptionIfPossible(ChainedPersistenceExceptionTranslator.java:59)
+	at org.springframework.dao.support.DataAccessUtils.translateIfNecessary(DataAccessUtils.java:213)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:147)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:133)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:92)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.data.repository.core.support.SurroundingTransactionDetectorMethodInterceptor.invoke(SurroundingTransactionDetectorMethodInterceptor.java:57)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:213)
+	at com.sun.proxy.$Proxy98.changeMessageState(Unknown Source)
+	at com.origen.faceshare.service.impl.UserMessageServiceImpl.updateMessageState(UserMessageServiceImpl.java:95)
+	at com.origen.faceshare.controller.UserController.userMessageDeal(UserController.java:333)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:133)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:97)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:967)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:872)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:661)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:105)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:478)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:80)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:799)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:861)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1455)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: javax.persistence.TransactionRequiredException: Executing an update/delete query
+	at org.hibernate.jpa.spi.AbstractQueryImpl.executeUpdate(AbstractQueryImpl.java:54)
+	at org.springframework.data.jpa.repository.query.JpaQueryExecution$ModifyingExecution.doExecute(JpaQueryExecution.java:238)
+	at org.springframework.data.jpa.repository.query.JpaQueryExecution.execute(JpaQueryExecution.java:85)
+	at org.springframework.data.jpa.repository.query.AbstractJpaQuery.doExecute(AbstractJpaQuery.java:116)
+	at org.springframework.data.jpa.repository.query.AbstractJpaQuery.execute(AbstractJpaQuery.java:106)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.doInvoke(RepositoryFactorySupport.java:483)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.invoke(RepositoryFactorySupport.java:461)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:56)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:99)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:282)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:96)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:136)
+	... 65 common frames omitted
+2017-09-01 15:29:11 [INFO] - origen 的收到信息条数已更新
+2017-09-01 15:29:36 [INFO] - noobgirl 的收到信息条数已更新
+2017-09-01 15:35:46 [ERROR] - Executing an update/delete query; nested exception is javax.persistence.TransactionRequiredException: Executing an update/delete query
+org.springframework.dao.InvalidDataAccessApiUsageException: Executing an update/delete query; nested exception is javax.persistence.TransactionRequiredException: Executing an update/delete query
+	at org.springframework.orm.jpa.EntityManagerFactoryUtils.convertJpaAccessExceptionIfPossible(EntityManagerFactoryUtils.java:413)
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.translateExceptionIfPossible(HibernateJpaDialect.java:246)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.translateExceptionIfPossible(AbstractEntityManagerFactoryBean.java:488)
+	at org.springframework.dao.support.ChainedPersistenceExceptionTranslator.translateExceptionIfPossible(ChainedPersistenceExceptionTranslator.java:59)
+	at org.springframework.dao.support.DataAccessUtils.translateIfNecessary(DataAccessUtils.java:213)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:147)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:133)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:92)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.data.repository.core.support.SurroundingTransactionDetectorMethodInterceptor.invoke(SurroundingTransactionDetectorMethodInterceptor.java:57)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:213)
+	at com.sun.proxy.$Proxy98.changeMessageState(Unknown Source)
+	at com.origen.faceshare.service.impl.UserMessageServiceImpl.updateMessageState(UserMessageServiceImpl.java:95)
+	at com.origen.faceshare.controller.UserController.userMessageDeal(UserController.java:333)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:133)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:97)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:967)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:872)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:661)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:105)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:478)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:80)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:799)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:861)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1455)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: javax.persistence.TransactionRequiredException: Executing an update/delete query
+	at org.hibernate.jpa.spi.AbstractQueryImpl.executeUpdate(AbstractQueryImpl.java:54)
+	at org.springframework.data.jpa.repository.query.JpaQueryExecution$ModifyingExecution.doExecute(JpaQueryExecution.java:238)
+	at org.springframework.data.jpa.repository.query.JpaQueryExecution.execute(JpaQueryExecution.java:85)
+	at org.springframework.data.jpa.repository.query.AbstractJpaQuery.doExecute(AbstractJpaQuery.java:116)
+	at org.springframework.data.jpa.repository.query.AbstractJpaQuery.execute(AbstractJpaQuery.java:106)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.doInvoke(RepositoryFactorySupport.java:483)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.invoke(RepositoryFactorySupport.java:461)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:56)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:99)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:282)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:96)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:136)
+	... 65 common frames omitted

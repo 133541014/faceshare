@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login</title>
+<!-- 引入bootstrap -->
+<link href="/css/bootstrap.min.css" rel="stylesheet"/>
+<script type="text/javascript" src="/js/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="/js/bootstrap.min.js"></script>
+<!--jquery.validate-->
+<script type="text/javascript" src="/js/jquery.validate.min.js" ></script>
+<script type="text/javascript" src="/js/login_validate.js" ></script>
+<style type="text/css">  
+	body{background: url(images/4.jpg) no-repeat;background-size:cover;font-size: 16px;}  
+	.form{background: rgba(255,255,255,0.2);width:400px;margin:100px auto;}  
+	#login_form{display: block;}  
+	#register_form{display: none;}  
+	.fa{display: inline-block;top: 27px;left: 6px;position: relative;color: #ccc;}  
+	input[type="text"],input[type="password"]{padding-left:26px;}  
+	.checkbox{padding-left:21px;}  
+	.error{color:red;}
+</style>  
+</head>
+<body>
+	<div class="container">  
+	     <div class="form row">  
+	         <form class="form-horizontal col-sm-offset-3 col-md-offset-3" id="login_form">  
+	             <h3 class="form-title">User Login</h3>  
+	             <label id="login_error"></label>
+	             <div class="col-sm-9 col-md-9">  
+	                 <div class="form-group">  
+	                     <i class="fa fa-user fa-lg"></i>  
+	                     <input class="form-control required" type="text" placeholder="Username" name="username" autofocus="autofocus"  th:value="${username}"/>  
+	                 </div>  
+	                 <div class="form-group">  
+	                         <i class="fa fa-lock fa-lg"></i>  
+	                         <input class="form-control required" type="password" placeholder="Password" name="password"  th:value="${password}"/>  
+	                 </div>  
+	                 <div class="form-group">  
+	                     <label class="checkbox">  
+	                         <input type="checkbox" name="remember" value="1"/> remember me  
+	                     </label>  
+	                     <hr />  
+	                     <a href="javascript:void(0);" id="register_btn" class="">to register</a>  
+	                 </div>  
+	                 <div class="form-group">  
+	                     <input type="submit" class="btn btn-success pull-right" value="Login "/>     
+	                 </div>  
+	             </div>  
+	         </form>  
+	     </div>  
+	
+	     <div class="form row">  
+	         <form class="form-horizontal col-sm-offset-3 col-md-offset-3" id="register_form" action="/register" method="post">  
+	             <h3 class="form-title">User Register</h3>  
+	             <label id="register_error"></label>
+	             <div class="col-sm-9 col-md-9">  
+	                 <div class="form-group">  
+	                     <i class="fa fa-user fa-lg"></i>  
+	                     <input class="form-control required" type="text" placeholder="Username" name="username" autofocus="autofocus"/>  
+	                 </div>  
+	                 <div class="form-group">  
+	                         <i class="fa fa-lock fa-lg"></i>  
+	                         <input class="form-control required" type="password" placeholder="Password" id="register_password" name="password"/>  
+	                 </div>  
+	                 <div class="form-group">  
+	                         <i class="fa fa-check fa-lg"></i>  
+	                         <input class="form-control required" type="password" placeholder="Re-type Your Password" name="rpassword"/>  
+	                 </div>  
+	                 <div class="form-group">  
+	                         <i class="fa fa-envelope fa-lg"></i>  
+	                         <input class="form-control eamil" type="text" placeholder="Email" name="email"/>  
+	                 </div>  
+	                 <div class="form-group">  
+	                     <input type="submit" class="btn btn-success pull-right" value="Sign Up " id="register"/>  
+	                     <input type="submit" class="btn btn-info pull-left" id="back_btn" value="Back" onclick="return false;"/>
+	                 </div>  
+	             </div>  
+	         </form>  
+	     </div>  
+     </div>  
+</body>
+</html>
