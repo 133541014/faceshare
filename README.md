@@ -8,4 +8,6 @@ This is a practice project
 
 Download or clone it and import your eclipse 
 
-Run Application.java file
+Run Application.java file 
+
+Visit url localhost:8820
